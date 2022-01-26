@@ -12,6 +12,7 @@ class Product {
     let name: String
     let category: String
     let price: Int
+    
     public init(name: String, category: String, productId: Int, price: Int) {
         self.name = name
         self.category = category
@@ -49,6 +50,16 @@ class CartProduct {
 
 class Cart {
     var products: [CartProduct] = []
+}
+
+class ProductTableViewCell: UITableViewCell {
+    @IBOutlet weak var productImage: UIImageView!
+    
+    @IBOutlet weak var productTitle: UILabel!
+    @IBOutlet weak var productDescription: UILabel!
+    @IBOutlet weak var addToCartButton: UIButton!
+    
+    
 }
 
 
@@ -101,17 +112,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
+        let cell:ProductTableViewCell = (self.tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier") as? ProductTableViewCell ?? nil)!
         let prods = self.categories[indexPath.section].products
-        cell.textLabel?.text = prods[indexPath.row].name
+        cell.productTitle?.text = prods[indexPath.row].name
         return cell
     }
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "ProductDetailsViewController") as! ProductDetailsViewController
-        vc.product = self.categories[indexPath.section].products[indexPath.row]
+        let vc = storyBoard.instantiateViewController(withIdentifier: "TempVC") as! TempVC
+//        vc.product = self.categories[indexPath.section].products[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
         self.tableView.deselectRow(at: indexPath, animated: true)
     }

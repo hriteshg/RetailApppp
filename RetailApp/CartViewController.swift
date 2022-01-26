@@ -24,7 +24,7 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")!
+        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cartCellReuseIdentifier")!
         let cartProduct = self.cartProducts[indexPath.row]
         print("product name \(cartProduct.product.name)")
         cell.textLabel?.text = cartProduct.product.name + " \(cartProduct.quantity)"
