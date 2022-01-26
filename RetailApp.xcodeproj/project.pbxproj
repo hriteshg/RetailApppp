@@ -15,6 +15,10 @@
 		291AFF94279ADE6300D66449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291AFF92279ADE6300D66449 /* LaunchScreen.storyboard */; };
 		291AFF9F279ADE6300D66449 /* RetailAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291AFF9E279ADE6300D66449 /* RetailAppTests.swift */; };
 		291AFFAA279ADE6300D66449 /* RetailAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291AFFA9279ADE6300D66449 /* RetailAppUITests.swift */; };
+		291AFFBC279ADF5900D66449 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 291AFFBB279ADF5900D66449 /* products.json */; };
+		291AFFC1279AF5D400D66449 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291AFFC0279AF5D400D66449 /* ProductDetailsViewController.swift */; };
+		291D89DB279DAAF900C55F49 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D89DA279DAAF900C55F49 /* CartManager.swift */; };
+		291D89E0279DAE7800C55F49 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D89DF279DAE7800C55F49 /* CartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		291AFFA5279ADE6300D66449 /* RetailAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetailAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		291AFFA9279ADE6300D66449 /* RetailAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailAppUITests.swift; sourceTree = "<group>"; };
 		291AFFAB279ADE6300D66449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		291AFFBB279ADF5900D66449 /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		291AFFC0279AF5D400D66449 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		291D89DA279DAAF900C55F49 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		291D89DF279DAE7800C55F49 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		291AFF86279ADE6000D66449 /* RetailApp */ = {
 			isa = PBXGroup;
 			children = (
+				291AFFBA279ADF2E00D66449 /* Resources */,
 				291AFF87279ADE6000D66449 /* AppDelegate.swift */,
 				291AFF89279ADE6000D66449 /* SceneDelegate.swift */,
 				291AFF8B279ADE6000D66449 /* ViewController.swift */,
@@ -106,6 +115,9 @@
 				291AFF90279ADE6300D66449 /* Assets.xcassets */,
 				291AFF92279ADE6300D66449 /* LaunchScreen.storyboard */,
 				291AFF95279ADE6300D66449 /* Info.plist */,
+				291AFFC0279AF5D400D66449 /* ProductDetailsViewController.swift */,
+				291D89DA279DAAF900C55F49 /* CartManager.swift */,
+				291D89DF279DAE7800C55F49 /* CartViewController.swift */,
 			);
 			path = RetailApp;
 			sourceTree = "<group>";
@@ -126,6 +138,14 @@
 				291AFFAB279ADE6300D66449 /* Info.plist */,
 			);
 			path = RetailAppUITests;
+			sourceTree = "<group>";
+		};
+		291AFFBA279ADF2E00D66449 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				291AFFBB279ADF5900D66449 /* products.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291AFF94279ADE6300D66449 /* LaunchScreen.storyboard in Resources */,
+				291AFFBC279ADF5900D66449 /* products.json in Resources */,
 				291AFF91279ADE6300D66449 /* Assets.xcassets in Resources */,
 				291AFF8F279ADE6000D66449 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291D89DB279DAAF900C55F49 /* CartManager.swift in Sources */,
 				291AFF8C279ADE6000D66449 /* ViewController.swift in Sources */,
 				291AFF88279ADE6000D66449 /* AppDelegate.swift in Sources */,
 				291AFF8A279ADE6000D66449 /* SceneDelegate.swift in Sources */,
+				291D89E0279DAE7800C55F49 /* CartViewController.swift in Sources */,
+				291AFFC1279AF5D400D66449 /* ProductDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
