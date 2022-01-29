@@ -36,4 +36,8 @@ final class CartManager: NSObject {
         }
         return result
     }
+    
+    func getProduct(productId: Int) -> CartProduct? {
+        return cartProducts[productId]
+    }
 }
