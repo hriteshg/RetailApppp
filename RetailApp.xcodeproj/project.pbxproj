@@ -19,6 +19,10 @@
 		291AFFC1279AF5D400D66449 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291AFFC0279AF5D400D66449 /* ProductDetailsViewController.swift */; };
 		291D89DB279DAAF900C55F49 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D89DA279DAAF900C55F49 /* CartManager.swift */; };
 		291D89E0279DAE7800C55F49 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291D89DF279DAE7800C55F49 /* CartViewController.swift */; };
+		9C33F3BD27A54125003A7640 /* chair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C33F3B927A54125003A7640 /* chair.jpg */; };
+		9C33F3BE27A54125003A7640 /* table.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C33F3BA27A54125003A7640 /* table.jpg */; };
+		9C33F3BF27A54125003A7640 /* phone.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C33F3BB27A54125003A7640 /* phone.jpeg */; };
+		9C33F3C027A54125003A7640 /* tv.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9C33F3BC27A54125003A7640 /* tv.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		291AFFC0279AF5D400D66449 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
 		291D89DA279DAAF900C55F49 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
 		291D89DF279DAE7800C55F49 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		9C33F3B927A54125003A7640 /* chair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chair.jpg; sourceTree = "<group>"; };
+		9C33F3BA27A54125003A7640 /* table.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = table.jpg; sourceTree = "<group>"; };
+		9C33F3BB27A54125003A7640 /* phone.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phone.jpeg; sourceTree = "<group>"; };
+		9C33F3BC27A54125003A7640 /* tv.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tv.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		291AFF86279ADE6000D66449 /* RetailApp */ = {
 			isa = PBXGroup;
 			children = (
+				9C33F3B827A54118003A7640 /* images */,
 				291AFFBA279ADF2E00D66449 /* Resources */,
 				291AFF87279ADE6000D66449 /* AppDelegate.swift */,
 				291AFF89279ADE6000D66449 /* SceneDelegate.swift */,
@@ -146,6 +155,17 @@
 				291AFFBB279ADF5900D66449 /* products.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C33F3B827A54118003A7640 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9C33F3B927A54125003A7640 /* chair.jpg */,
+				9C33F3BB27A54125003A7640 /* phone.jpeg */,
+				9C33F3BA27A54125003A7640 /* table.jpg */,
+				9C33F3BC27A54125003A7640 /* tv.jpeg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +273,10 @@
 			files = (
 				291AFF94279ADE6300D66449 /* LaunchScreen.storyboard in Resources */,
 				291AFFBC279ADF5900D66449 /* products.json in Resources */,
+				9C33F3BE27A54125003A7640 /* table.jpg in Resources */,
+				9C33F3BD27A54125003A7640 /* chair.jpg in Resources */,
+				9C33F3BF27A54125003A7640 /* phone.jpeg in Resources */,
+				9C33F3C027A54125003A7640 /* tv.jpeg in Resources */,
 				291AFF91279ADE6300D66449 /* Assets.xcassets in Resources */,
 				291AFF8F279ADE6000D66449 /* Main.storyboard in Resources */,
 			);

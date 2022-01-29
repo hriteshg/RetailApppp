@@ -13,13 +13,15 @@ class Product {
     let category: String
     let price: Int
     let description: String
+    let image: String
     
-    public init(name: String, category: String, productId: Int, price: Int, description: String) {
+    public init(name: String, category: String, productId: Int, price: Int, description: String, image: String) {
         self.name = name
         self.category = category
         self.productId = productId
         self.price = price
         self.description = description
+        self.image = image
     }
 }
 
@@ -84,7 +86,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                   if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let products = jsonResult["products"] as? [AnyObject] {
                     print("products \(products)")
                     for prod in products {
-                        let result = Product(name: prod["name"] as! String, category: prod["category"] as! String, productId: prod["id"] as! Int, price: prod["price"] as! Int, description: prod["description"] as! String)
+                        let result = Product(name: prod["name"] as! String, category: prod["category"] as! String, productId: prod["id"] as! Int, price: prod["price"] as! Int, description: prod["description"] as! String, image: prod["image"] as! String)
                         let category = Category(name: result.category)
                         if let index = self.categories.firstIndex(of: category) {
                             let categoryToUpdate = self.categories[index]
@@ -115,6 +117,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let prods = self.categories[indexPath.section].products
         cell.productTitle?.text = prods[indexPath.row].name
         cell.productDescription?.text = prods[indexPath.row].description
+        cell.productImage?.image = UIImage(named: prods[indexPath.row].image)
         cell.addToCartButton.addTarget(self, action: #selector(onAddToCartClicked), for: .touchUpInside)
         cell.addToCartButton.tag = indexPath.row
         return cell

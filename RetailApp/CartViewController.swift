@@ -12,10 +12,16 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     var cartProducts: [CartProduct] = []
     override func viewDidLoad() {
+        print("CartViewController")
         super.viewDidLoad()
         self.cartProducts = CartManager.sharedInstance.getProducts()
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.cartProducts = CartManager.sharedInstance.getProducts()
+        self.tableView.reloadData()
     }
     
     // number of rows in table view
