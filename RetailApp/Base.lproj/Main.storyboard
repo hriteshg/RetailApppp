@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U6h-Z4-dok">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U6h-Z4-dok">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RetailApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -23,7 +21,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" rowHeight="151" id="szk-7a-0ZL" customClass="ProductTableViewCell" customModule="RetailApp">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="151"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="szk-7a-0ZL" id="t6o-Hk-fRw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
@@ -45,27 +43,18 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Arrives in 2 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="778-CN-wdx">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="Arrives in 2 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="778-CN-wdx">
                                                     <rect key="frame" x="138" y="65.5" width="238" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRK-7F-d5o">
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRK-7F-d5o">
                                                     <rect key="frame" x="147" y="108.5" width="83" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="83" id="tdm-OV-cwF"/>
                                                     </constraints>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Add"/>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5db-Pd-vMc">
-                                                    <rect key="frame" x="250" y="108.5" width="83" height="22"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="83" id="bO2-J3-poU"/>
-                                                    </constraints>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Add"/>
+                                                    <state key="normal" title="Add to cart"/>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -73,13 +62,10 @@
                                                 <constraint firstItem="oDx-1g-fgd" firstAttribute="leading" secondItem="Toy-fy-Zhm" secondAttribute="trailing" constant="8" symbolic="YES" id="Cu7-OB-GiL"/>
                                                 <constraint firstItem="dRK-7F-d5o" firstAttribute="leading" secondItem="Toy-fy-Zhm" secondAttribute="trailing" constant="17" id="EgW-4J-A67"/>
                                                 <constraint firstItem="Toy-fy-Zhm" firstAttribute="leading" secondItem="t6o-Hk-fRw" secondAttribute="leadingMargin" constant="18" id="FXa-HJ-CAP"/>
-                                                <constraint firstItem="dRK-7F-d5o" firstAttribute="baseline" secondItem="5db-Pd-vMc" secondAttribute="baseline" id="Lz1-cC-gXO"/>
                                                 <constraint firstItem="Toy-fy-Zhm" firstAttribute="top" secondItem="oDx-1g-fgd" secondAttribute="top" id="QlZ-k0-1ir"/>
                                                 <constraint firstItem="oDx-1g-fgd" firstAttribute="trailing" secondItem="778-CN-wdx" secondAttribute="trailing" id="Qy3-O2-MfE"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="dRK-7F-d5o" secondAttribute="bottom" constant="9.5" id="RYN-zL-lwH"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Toy-fy-Zhm" secondAttribute="bottom" constant="21.5" id="SeR-37-Q9S"/>
-                                                <constraint firstItem="5db-Pd-vMc" firstAttribute="leading" secondItem="dRK-7F-d5o" secondAttribute="trailing" constant="20" id="Soc-4E-aEC"/>
-                                                <constraint firstItem="5db-Pd-vMc" firstAttribute="baseline" secondItem="dRK-7F-d5o" secondAttribute="firstBaseline" id="Tb2-pG-OuW"/>
                                                 <constraint firstItem="Toy-fy-Zhm" firstAttribute="top" secondItem="t6o-Hk-fRw" secondAttribute="topMargin" constant="9.5" id="Zes-Aq-mSh"/>
                                                 <constraint firstItem="oDx-1g-fgd" firstAttribute="leading" secondItem="778-CN-wdx" secondAttribute="leading" id="fxY-xj-RpA"/>
                                                 <constraint firstItem="778-CN-wdx" firstAttribute="top" secondItem="oDx-1g-fgd" secondAttribute="bottom" constant="21" id="mdK-Ap-9y0"/>
@@ -109,6 +95,7 @@
                         <outlet property="tableView" destination="SiK-KZ-6Jw" id="utU-bw-hbQ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1021.7391304347827" y="119.86607142857142"/>
         </scene>
@@ -203,7 +190,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" rowHeight="146" id="p4L-dv-6fP">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="146"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="146"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p4L-dv-6fP" id="azT-Oy-BmM">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="146"/>
@@ -225,27 +212,25 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Arrives in 2 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBV-Y0-ZxM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" ambiguous="YES" text="Arrives in 2 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBV-Y0-ZxM">
                                                     <rect key="frame" x="108" y="63" width="238" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHZ-pf-ZaE">
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHZ-pf-ZaE">
                                                     <rect key="frame" x="117" y="106" width="83" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="83" id="8k0-Bk-hR6"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Add"/>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ho-kB-xyd">
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ho-kB-xyd">
                                                     <rect key="frame" x="220" y="106" width="83" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="83" id="sZG-BQ-87u"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Add"/>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -321,7 +306,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartCellReuseIdentifier" id="voV-XK-4vI">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="voV-XK-4vI" id="rzD-rQ-hwg">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
