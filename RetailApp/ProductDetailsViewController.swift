@@ -14,6 +14,7 @@ class ProductDetailsViewController: UIViewController {
     @IBOutlet weak var decrementQuantityButton: UIButton!
     @IBOutlet weak var viewCart: UIButton!
     var product: Product? = nil
+    @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var unitPrice: UILabel!
     @IBOutlet weak var productNameLabel: UILabel!
     override func viewDidLoad() {
@@ -31,7 +32,8 @@ class ProductDetailsViewController: UIViewController {
         } else {
             self.quantityLabel.text = "0"
         }
-        
+        self.productImageView.image = UIImage(named: product?.image ?? "")
+
         self.viewCart.addTarget(self, action: #selector(viewCartClicked), for: .touchUpInside)
         CartManager.sharedInstance.getProducts()
     }

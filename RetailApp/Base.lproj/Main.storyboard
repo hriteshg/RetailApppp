@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1ul-PG-gNJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1ul-PG-gNJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +21,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" rowHeight="151" id="szk-7a-0ZL" customClass="ProductTableViewCell" customModule="RetailApp">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="151"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="151"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="szk-7a-0ZL" id="t6o-Hk-fRw">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="151"/>
@@ -218,6 +217,7 @@
                         <outlet property="categoryNameLabel" destination="Vtp-M6-0Ze" id="i1o-th-nRH"/>
                         <outlet property="decrementQuantityButton" destination="ViE-xQ-Zg1" id="NTg-pb-aUG"/>
                         <outlet property="incrementQuantityButton" destination="asf-Zu-UHN" id="CKX-tf-UWl"/>
+                        <outlet property="productImageView" destination="TOr-AA-f04" id="LMv-5R-uIx"/>
                         <outlet property="productNameLabel" destination="k9d-ju-Bh2" id="pSi-3k-qZJ"/>
                         <outlet property="quantityLabel" destination="hRP-N7-1v4" id="8cD-qh-IFa"/>
                         <outlet property="unitPrice" destination="8yW-LU-mAA" id="s5t-Ty-0gm"/>
@@ -241,7 +241,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellReuseIdentifier" rowHeight="146" id="p4L-dv-6fP">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="146"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="146"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p4L-dv-6fP" id="azT-Oy-BmM">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="146"/>
@@ -331,7 +331,6 @@
         <!--Home-->
         <scene sceneID="2yY-UI-9Jz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2X9-PV-CEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U6h-Z4-dok" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="DzD-cr-cNL"/>
                     <toolbarItems/>
@@ -344,6 +343,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EsG-gU-oXT"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2X9-PV-CEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1103" y="-139"/>
         </scene>
@@ -360,7 +360,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartCellReuseIdentifier" id="voV-XK-4vI">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="voV-XK-4vI" id="rzD-rQ-hwg">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -408,6 +408,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1ul-PG-gNJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nKu-b8-InD">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
