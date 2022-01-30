@@ -7,6 +7,19 @@
 
 import UIKit
 
+
+class CartTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var productTitle: UILabel!
+    @IBOutlet weak var productDescription: UILabel!
+    @IBOutlet weak var productPrice: UILabel!
+    @IBOutlet weak var productImage: UIImageView!
+    
+    @IBOutlet weak var quantity: UILabel!
+    @IBOutlet weak var removeButton: UIButton!
+    @IBOutlet weak var addButton: UIButton!
+}
+
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
@@ -30,10 +43,14 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: "cartCellReuseIdentifier")!
+        let cell:CartTableViewCell = ((self.tableView.dequeueReusableCell(withIdentifier: "cartCellReuseIdentifier") as? CartTableViewCell)!)
         let cartProduct = self.cartProducts[indexPath.row]
         print("product name \(cartProduct.product.name)")
-        cell.textLabel?.text = cartProduct.product.name + " \(cartProduct.quantity)"
+        cell.productTitle?.text = cartProduct.product.name + " \(cartProduct.quantity)"
+        cell.productDescription?.text = "This is decription"
+        cell.productPrice?.text = "$ 100"
         return cell
     }
 }
+
+
